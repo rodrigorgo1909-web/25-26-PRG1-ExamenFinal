@@ -21,7 +21,8 @@ class CalculadoraGeometria {
             int opcion = sc.nextInt();
 
             if (opcion == 5) {
-                System.out.println("Historial de Calculos");
+                // Commit 5: Historial y area total más claros
+                System.out.println("\nHistorial de Calculos");
                 double totalArea = 0;
                 for (int i = 0; i < idx; i++) {
                     System.out.println((i+1) + ". " + historialFig[i] +
@@ -76,7 +77,6 @@ class CalculadoraGeometria {
                     System.out.println("Dimensiones invalidas");
                 }
             } else if (opcion == 3) {
-                // Commit 4: Triangulo ajustado
                 System.out.print("Base: ");
                 valor1 = sc.nextDouble();
                 System.out.print("Altura: ");
