@@ -51,6 +51,7 @@ class CalculadoraGeometria {
                         historialPerimetro[idx] = perimetro;
                         idx++;
                     }
+                    System.out.println("Calculo completado.");
                 } else {
                     System.out.println("Radio invalido");
                 }
@@ -70,6 +71,7 @@ class CalculadoraGeometria {
                         historialPerimetro[idx] = perimetro;
                         idx++;
                     }
+                    System.out.println("Calculo completado.");
                 } else {
                     System.out.println("Dimensiones invalidas");
                 }
@@ -92,6 +94,7 @@ class CalculadoraGeometria {
                         historialPerimetro[idx] = perimetro;
                         idx++;
                     }
+                    System.out.println("Calculo completado.");
                 } else {
                     System.out.println("Lados invalidos o no forman un triangulo");
                 }
@@ -113,6 +116,7 @@ class CalculadoraGeometria {
                         historialPerimetro[idx] = volumen;
                         idx++;
                     }
+                    System.out.println("Calculo completado.");
                 } else {
                     System.out.println("Dimensiones invalidas");
                 }
