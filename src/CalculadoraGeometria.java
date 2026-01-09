@@ -76,16 +76,18 @@ class CalculadoraGeometria {
                     System.out.println("Dimensiones invalidas");
                 }
             } else if (opcion == 3) {
-                System.out.print("Lado 1: ");
+                // Commit 4: Triangulo ajustado
+                System.out.print("Base: ");
                 valor1 = sc.nextDouble();
-                System.out.print("Lado 2: ");
+                System.out.print("Altura: ");
                 valor2 = sc.nextDouble();
-                System.out.print("Lado 3: ");
-                double valor3 = sc.nextDouble();
-                if (valor1 > 0 && valor2 > 0 && valor3 > 0) {
-                    double s = (valor1 + valor2 + valor3) / 2;
-                    double area = Math.sqrt(s * (s - valor1) * (s - valor2) * (s - valor3));
-                    double perimetro = valor1 + valor2 + valor3;
+                System.out.print("Lado 1: ");
+                double lado2 = sc.nextDouble();
+                System.out.print("Lado 2: ");
+                double lado3 = sc.nextDouble();
+                if (valor1 > 0 && valor2 > 0 && lado2 > 0 && lado3 > 0) {
+                    double area = (valor1 * valor2) / 2;
+                    double perimetro = valor1 + lado2 + lado3;
                     System.out.println("Area: " + area);
                     System.out.println("Perimetro: " + perimetro);
                     if(idx < 20) {
@@ -96,7 +98,7 @@ class CalculadoraGeometria {
                     }
                     System.out.println("Calculo completado.");
                 } else {
-                    System.out.println("Lados invalidos o no forman un triangulo");
+                    System.out.println("Datos invalidos");
                 }
             } else if (opcion == 4) {
                 System.out.print("Radio: ");
